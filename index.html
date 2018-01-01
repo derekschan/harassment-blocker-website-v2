@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="//d3js.org/d3.v3.min.js"></script>
+
+  <meta charset="utf-8">
+  <title>Imperial Boootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+<!-- =======================================================
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  Author: BootstrapMade.com
+  Author URL: https://bootstrapmade.com
+======================================================= -->
+</head>
+
+<body>
+
+  <div id="preloader"></div>
+
+<!--
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementById("hero");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+-->
+
+
+<!--==========================
+  Hero Section
+============================-->
+  <section id="hero">
+
+    <div class="hero-container">
+
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <!--<img class="" src="img/logo.png" alt="Imperial">-->
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1><font size="38">Empathization</font></h1>
+        <!--<h2><font size="20">Mitigating online <span style="color: #008080">gender harassment</span> through</font><br>-->
+        <h2>Mitigating online gender harassment through<br>
+            <span class="rotating">1) user feedback, 2) empathetic innovation, and 3) data-science products</span></h2>
+        <!--<h2>Mitigating online gender harassment through<br>
+        <span>1) user feedback, 2) empathetic innovation, and 3) data-science products</span></h2>-->
+
+        <div class="actions">
+          <!--<a href="#services" class="btn-services">Global Problem</a>
+          <a href="#portfolio" class="btn-portfolio">Product Solutions</a>-->
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <span style="color: #fff; text-align: left; font-size: 16px"><i><span style="font-size: 20px; font-weight:bold"> Disclaimer: </span> Given the nature of the problem we're trying to mitigate with our products, please note that as you scroll through the website, <br> you will be exposed to some offensive and violent language. <br> Please continue at your own discretion.</i></span>
+    </div>
+  </section>
+  <script>
+  var images = [ /*"img/1_pic_sun_thru_clouds_recolored.png",*/ "img/1_pic_Togetherness_recolored.png" ];
+  function changeImage(index) {
+    var x = document.getElementById("hero");
+    x.style['background-image'] = "url(\"" + images[index] + "\")";
+    var nextIndex = index + 1;
+    if(nextIndex >= images.length) nextIndex = 0;
+    setTimeout(function() { changeImage(nextIndex); }, 2000);
+    }
+    changeImage(0);
+  </script>
+
+<!--==========================
+  Header Section
+============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a> -->
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Global Problem</a></li>
+          <li><a href="#products">Mitigation Products</a></li><!--section to be created-->
+          <li><a href="#portfolio">Artificial Intelligence</a></li><!--fix broken link-->
+          <li><a href="#testimonials">Future Possibilities</a></li>
+          <li><a href="#team">Team & Advisors</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<!--==========================
+  About Section
+============================-->
+  <section id="about">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">About</h3>
+          <div class="section-title-divider"></div>
+            <p class="about-text">
+              Empathization refers to an effort that, thus far, has produced two data-science products aimed to foster empathy and how people regard themselves and each other. The products are informed by user feedback to mitigate an epidemic -- online gender harassment -- as part of an even larger issue: global gender inequality that exists online and offline.
+            </p>
+            <p class="about-text">
+              The current products revolve around two groups of Twitter users: people who repeatedly send online gender harassment tweets, and people who receive and are affected by such harassment. The products are built upon artificial intelligence (AI) algorithms that learn from humans' detection of gender harassment, and do so in an automated way.
+            </p>
+            <p class="about-text">
+              Among tweets the algorithms predict as online gender harassment, the algorithms are accurate 76-80% of the time. One of the user-facing products has shown the scalable potential to not only detect but take action on over 1 million offensive tweets per week.
+            </p>
+            <p class="about-text">
+              We co-won the <a style="color:white;" href='https://www.ischool.berkeley.edu/projects/2017/empathization' target="_blank">Hal R. Varian Award from UC Berkeley</a> in mid-May 2017; presented at Google to its <a style="color:white;" href='https://conversationai.github.io/' target="_blank">Conversation AI Team</a> in late-May 2017; and informally discussed new research with a <a style="color:white;" href='https://jigsaw.google.com/' target="_blank">Jigsaw</a> leader from June through December 2017.
+            </p>
+         </div>
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Services Section
+============================-->
+  <section id="services">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Global Problem</h3>
+          <div class="section-title-divider"></div>
+
+            <p class="services-text">
+              Unequal treatment of women cuts across race/ethnicity, nationality, and region. However, the opportunity to elevate gender equality exists through daily interpersonal interactions.
+            </p>
+            <p class="services-text">
+              According to the <a href='http://www.ohchr.org/EN/UDHR/Pages/CrossCuttingThemes.aspx' target="_blank">United Nations Human Rights Office of the High Commissioner</a>, gender equality refers to “equal rights, responsibilities and opportunities. . . However, after 60 years, it is clear that it is the human rights of women that we see most widely ignored around the world”. And <a href="http://www.mckinsey.com/global-themes/employment-and-growth/how-advancing-womens-equality-can-add-12-trillion-to-global-growth" target="_blank">McKinsey Global Institute</a> estimates potential gender equality at $12+ trillion gain per year for future global GDP. While social and financial aspects exist, our efforts revolve around the social aspect.
+            </p>
+            <p class="services-text">
+             Given gender inequality comprises myriad issues, we target our efforts at a specific sub-issue that has reached an epidemic: online gender harassment. Such harassment is prevalent (<a href='https://www.symantec.com/en/au/about/newsroom/press-releases/2016/symantec_0309_01' target="_blank">Norton, 2016</a>; <a href='http://www.womenactionmedia.org/twitter-report/' target="_blank">Women, Action, & the Media, 2015</a>; <a href='http://www.pewresearch.org/fact-tank/2014/10/30/5-facts-about-online-harassment/' target="_blank">Pew Research Center, 2014</a>) across Twitter, Facebook, YouTube, etc. Consequently, this influences many women to disengage from social media and not share their perspectives as much. Yet, women deserve equal opportunities to contribute online and offline.
+            </p>
+
+            <img src="img/2_pic_OnlineHarassmentStats.png" style="width:850px;height:120px;">
+            <h5>Source: Norton, 2016 via <a href='https://www.cnet.com/news/not-just-words-online-harassment-of-women-epidemic-norton-research/' target="_blank">Claire Reilly, c|net, 2016</a></h5>
+
+            <p class="services-text">
+              Various women granted valuable interviews, helping us understand their personal experiences with Twitter online gender harassment and what they view as potential solutions. For instance, regarding potential solutions, women provided feedback that's been incorporated in our product work in the next section. As for the global problem, some women said they anonymize their usernames to reduce gender-based backlash. Various women said their engagement with Twitter and other social media has declined. And some believe they are treated worse online, where offenders (men and women) reveal their true character. Moreover, people's harassing behavior can bleed into their offline behavior.
+            </p>
+            <p class="services-text">
+              Tara Moss (Canadian-Australian author, women's rights advocate, and UNICEF ambassador) explains, “it's feeding into the higher rates of sexual violence and sexual harassment that women are experiencing in the physical world.” Other research uncovers:
+              <font size="4">
+                <li>In part of the globe, nearly 1 of 2 women is harassed online, while 3 out of every 4 women under age 30 have experienced online harassment. In addition, "Women are twice as likely to receive death threats online, and women are also twice as likely to receive threats of sexual violence and rape. They're also more likely to be the target of revenge porn, sextortion and sexual harassment" (Source: Norton, 2016 via <a href='https://www.cnet.com/news/not-just-words-online-harassment-of-women-epidemic-norton-research/' target="_blank">Claire Reilly, c|net, 2016</a>).</li>
+                <li>In some cases, women usernames incur an average of 100 sexually explicit or threatening messages a day, whereas men usernames receive 3.7 (<a href='https://psmag.com/why-women-aren-t-welcome-on-the-internet-aa21fdbc8d6#.vniezikge' target="_blank">2014 article on University of Maryland, 2006</a>)</li>
+                <li>WAM! (Women, Action, and the Media) study: "The vicious targeting of women, women of color, queer women, trans women, disabled women, and other oppressed groups who speak up on online has reached crisis levels. Hate speech and violent threats are being used to silence the voices of women and gender non-conforming people in the public discourse everyday. Examples of the impact these attacks are having on women’s lives are everywhere" (<a href='http://www.womenactionmedia.org/twitter-report/' target="_blank">Women, Action, & the Media, 2015</a>).</li>
+                <li>Twitter General Counsel, Vijayada Gadde, admits: "These users often hide behind the veil of anonymity on Twitter and create multiple accounts expressly for the purpose of intimidating and silencing people" (<a href='https://www.washingtonpost.com/posteverything/wp/2015/04/16/twitter-executive-heres-how-were-trying-to-stop-abuse-while-preserving-free-speech/?utm_term=.29974544e452' target="_blank">Washington Post, 2015</a>).</li>
+                <li>“Online violence against women is an overt expression of the gender discrimination and inequality that exists offline. Online, it becomes amplified,” says Jac sm Kee of the Association for Progressive Communications (APC), a Global Fund for Women grantee partner, which provided the above examples of online violence and harassment. “The most important way to shift this is to enable women and girls to engage with the Internet at all levels – from use, creation, and development to the imagination of what it should and can be" (<a href='http://ignite.globalfundforwomen.org/gallery/online-violence' target="_blank">Global Fund for Women, 2015)</a>.</li>
+              </font>
+            </p>
+        </div>
+      </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CEfjTfYlFpc?start=47" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+<!--==========================
+  Products Section
+============================-->
+  <section id="products">
+    <div class="container">
+      <div class="row">
+       <h3 class="products-title" style="text-align: center">MITIGATION PRODUCTS</h3>
+       <div class="section-title-divider"></div>
+       <div class="col-md-6 col-md-push-3 about-content">
+        <p class="products-text" style="font-size:20px">
+        The <span style="font-weight: bold; font-size: 24px; color: #00802b">Automated Twitter Bot</span> is the first of our products. This bot, disguised to appear as a young white male, is designed to detect gender harassment tweets and intervene by calling out the offensive language of the tweet in a reply to the offender. This product is designed with the intent to mitigate abusive online behavior at the source.
+        </p>
+      </div>
+    </div>
+    </div>
+
+    <div class="container about-container">
+     <div class="row">
+      <div class="col-sm-6"></div>
+      <div class="col-sm-6"></div>
+      <div class="col-md-6 col-md-push-0">
+       <!--<h3 style="text-align: center">Automated Twitter Bots</h3>-->
+       <img src="img/mike-bot.png" align = "center" style= "max-height:80vh">
+      </div>
+      <div class="col-md-5 col-md-push-1 about-content">
+       <p class="products-text2" style="text-align: justify; font-size: 16px; line-height: 24px">
+       <!--<h3 style="text-align: center">How it Works</h3>-->
+        <span style="font-weight: bold;font-size: 20px">Detection</span>
+        <br>
+        The AI behind the bot detects gender harassment tweets using an ensemble of eight models:<span style="color: #00802b; font-weight:bold"> Five Gradient Boosting Decision Trees (GDBT), Two Feed Forward Neural Networks (FNN), and One Logistic Regression (LR)</span>. Tweets are classified based on the average predicted probability of harassment across these models. Our default probability threshold is set at 70%. This threshold was defined through the rigorous process of analyzing almost 20,000 tweets for language specifically indicative of gender harassment.
+        <br>
+        <br>
+        <span style="font-weight: bold;font-size: 20px">Intervention</span>
+        <br>
+        The method and message of intervention was informed by two studies. One is a study using <a href='http://www.rethinkwords.com/' target="_blank">ReThink</a>, a software product designed to prevent adolescents from sending or posting hurtful messages. The second is an <a href='https://link.springer.com/article/10.1007/s11109-016-9373-5' target="_blank">NYU Field Experiment</a>, which addressed racial harassment on Twitter. Both studies found that checking offensive language with a simple message was effective.
+       <!--<img src="img/bot-example.png" style="width:90%; height:90%;">-->
+       </p>
+      </div>
+     </div>
+     </div>
+       <p class="products-text">
+            <br>
+            <br>
+            <br>
+          </p>
+            <h3 style="color: #666666; text-align: center; font-weight: bold;">BOT AT WORK</h3><br>
+            <div class="container about-container">
+             <div class="row">
+
+            <p style="font-size: 12px; color: #222; text-align: center; margin-bottom: 0px">(Names and parts of some messages have been blacked out for privacy reasons)</p>
+             <div class="slideshow-container">
+              <div class="mySlides fade">
+              <!--<div class="numbertext">1 / 6</div>-->
+              <center><img src="img/example1.png" style="max-height: 80vh;"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>
+
+              <div class="mySlides fade">
+              <!--<div class="numbertext">2 / 6</div>-->
+              <center><img src="img/example2.png" style="max-height: 80vh"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>
+
+              <div class="mySlides fade">
+              <!--<div class="numbertext">3 / 6</div>-->
+              <center><img src="img/example3.png" style="max-height: 80vh"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>
+
+              <div class="mySlides fade">
+              <!--<div class="numbertext">4 / 6</div> -->
+              <center><img src="img/example4.png" style="max-height: 80vh"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>
+
+              <div class="mySlides fade">
+              <!--<div class="numbertext">5 / 6</div>-->
+              <center><img src="img/example5.png" style="max-height: 80vh"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>
+
+              <div class="mySlides fade">
+              <!--<div class="numbertext">6 / 6</div>-->
+              <center><img src="img/example6.png" style="max-height: 80vh"></center>
+              <!-- <div class="text">Caption Text</div>-->
+              </div>
+
+            <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+          </div>
+
+           <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+          <script type="text/javascript">
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+            }
+          </script>
+
+          </div>
+      </div>
+
+     <p class="products-text"><br><br><br><br><br></p>
+
+      <h3 style="color: #666666; text-align: center; font-weight: bold;">THE BOT EFFECT</h3>
+      <h3 style="color: #666666; text-align: center">Original Field Experiment</h3>
+
+      <div class="container about-container">
+        <div class="row">
+          <!--
+          <div class="col-sm-4"></div>
+          <div class="col-sm-8"></div>
+          div class="col-sm-5"></div>
+          <div class="col-md-5 col-md-push-0">-->
+          <p class="products-text" style="color: #666666; font-size: 16px">
+            <span style="font-weight: bold; color: #00802b; font-size: 18px">Hypothesis:</span> The number of offensive tweets (tweets with harassment probability of 70% or more) per offender in the treatment group will be lower than the number of offensive tweets per offender in the control group post intervention. The intervention is the response from the bot to the offender.
+            <br><br>
+            <span style="font-weight: bold; color: #00802b; font-size: 18px">Setup:</span>
+            Over 25 million tweets were run through our AI ensemble of models to identify about 4K offenders, excluding porn and bot accounts. Each bot is set up to track around 1.5K offender accounts for offensive tweets.
+            <br><br><span style="font-weight: bold; color: #00802b; font-size: 18px">Randomization:</span>
+            As soon as a tweet from a selected offender is flagged as gender harassment, the offender is randomly placed in treatment or control. If they get placed in treatment, the bot replies to their offensive tweet six minutes later. No reply to offenders in the control group.
+            <br><br>
+            The experiment ran April 15-23 (with results posted and presented previously) after a brief pilot study. We ran a new, larger pilot study from June-July 2017 to refine our approach, and concluded with a more rigorous full study from July-September 2017, which is explained below.
+          <!--</div>-->
+          <h3 style="color: #666666; text-align: center">New Field Experiment</h3>
+
+        <div class="container about-container">
+          <div class="row">
+            <!--
+            <div class="col-sm-4"></div>
+            <div class="col-sm-8"></div>
+            div class="col-sm-5"></div>
+            <div class="col-md-5 col-md-push-0">-->
+            <!--</div>-->
+            <p class="products-text" style="color: #666666; font-size: 16px">
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Hypothesis:</span> Over time, users' percent of offensive tweets (tweets with harassment probability of 70% or more) in the treatment groups will we lower than that of the control group, after bots reply to users in treatment groups but not the control group.
+              <br><br>
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Setup:</span>
+              Another set of millions of tweets were run through our AI ensemble of models to identify about 8K offenders who hadn't been in the original field experiment. Each bot has a different profile and photo than the oriignal field experiment. It again is set up to track around 1.5K offender accounts for offensive tweets.
+              <br><br>
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Randomization:</span>
+              We relied on two stages of randomization. At the first stage, the offenders were randomly assigned to one of four bots. For each bot, we observed users for several weeks. Then, at the second stage, as soon as a tweet from an offender is flagged as gender harassment, the offender is randomly placed in treatment or control for that bot. If they get placed in treatment, the bot replies to their offensive tweet 30 seconds later. No reply to offenders in the control group.
+              <br><br>
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Bots:</span>
+              Below is an illustration of the 4 treatment bots, their profile photos and descriptions, and their automated replies.
+              <center><img src="img/Final_Experiment_1of4.png" style="width: 70%; max-height: 80%"></center>
+              <br><br>
+            </p>
+            <p class="products-text" style="color: #666666; font-size: 16px">
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Sample Sizes:</span>
+              The following table shows the number of Twitter harassers tracked during our 6-week study.
+              <center><img src="img/Final_Experiment_2of4.png" style="width: 40%; max-height: 80%"></center>
+              <br><br>
+            </p>
+            <p class="products-text" style="color: #666666; font-size: 16px">
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Results:</span>
+              In the graphs below, the horizontal trend lines show the change in percent of tweets detected as misogynistic before and after 8/11/2017: the date when treatment bots started to reply to harassers. The horizontal trend lines of the Treatment Bots #1 and #2 weren’t statistically different than that of the control group. That is, any difference among them is likely to be due to random chance. [Note: The vertical bars reflect the likely potential variation in percent of misogynistic tweets that could have occurred if we had replicated the experiment.]
+              <center><img src="img/Final_Experiment_3of4.png" style="width: 70%; max-height: 80%"></center>
+              <br><br>
+              <center><img src="img/Final_Experiment_4of4.png" style="width: 70%; max-height: 80%"></center>
+              <br><br>
+            </p>
+            <p class="products-text" style="color: #666666; font-size: 16px">
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Conclusion:</span>
+              The new experiment, with more rigor in its design and measurement, suggests no statistically significant impact against gender-harassment on Twitter.
+              <br><br>
+            </p>
+            <p class="products-text" style="color: #666666; font-size: 16px">
+              <span style="font-weight: bold; color: #00802b; font-size: 18px">Technical Language (Optional):</span>
+              <br><br>
+              Percents: We measure not the number but percent of misogynistic tweets before vs. after our bots intervened. Why? A trend based off the number of misogynistic tweets can be misleading: A user can decrease from 15 misogynistic tweets last month to 10 this month, yet their percent of misogynistic tweets can increase from 15% (15/100) last month to 50% (10/20) this month.
+              <br><br>
+              Weighting: We weighted each user by their number of overall tweets sent during the study. Why? Percent of misogynistic tweets would be inflated if a person with 5 overall tweets (1 misogynistic out of 5 overall tweets) were weighted the same as a person with 50 overall tweets (10 misogynistic  out of 50 overall tweets).</li>
+              <br><br>
+              Graphs: We show non-regression means and standard errors weighted by number of overall tweets. The vertical bars represent 95% confidence intervals. And the “Post - Pre” label [e.g., “-0.04 (0.02)”] equals the weighted mean, followed by the standard error in parentheses. For each group’s weighted mean, the standard error was computed from a bootstrapped sampling distribution of 200 weighted means.</li>
+              <br><br>
+              Model: We used weighted least squares rather than difference-in-differences regression, as weighted least squares regression is a slightly more functional form. It allows the coefficient (pre-treatment percent of misogynistic tweets) to differ from 1.0. It also allows straightforward weighting (i.e., weighting each user by number of overall tweets for accuracy).
+              <br><br>
+              Equation: post-treatment percent of misogynistic tweets = Intercept +  pre-treatment percent of misogynistic tweets + treatment_bot1 + treatment_bot2 + treatment_bot3 + treatment_bot4</li>
+              <br><br>
+              R-squared: 0.530, Adjusted R-squared: 0.528
+              <br><br>
+              Distribution: While the dependent variable (post-treatment percent of misogynistic tweets) isn’t normally distributed but skewed, the Central Limit Theorem says as samples get large, the sampling distribution has a normal distribution, and regression coefficients will be normally distributed even if the dependent variable isn’t.</li>
+              <br><br>
+              Outliers: Since some Twitter “users” are bots with high tweet activity, we researched several methods for outlier removal: standard deviations, interquartile range, log transformation, median absolute deviation, and top 5% trimming. However, because it’s best to keep all observations unless clear evidence for a specific observation shows otherwise, we proceeded without outlier removal. In general, outlier removal is related to controversial p-hacking.</li>
+              <br><br>
+            </p>
+
+          <!--<div class="col-md-3 col-md-push-0">
+            <h3 style="text-align: center; font-size: 18px; color: #666666; font-weight: bold;">Randomization Output</h3>
+            <span style="color: #666666; font-size: 13px; text-align: justify;"> At the end of one week, there were <span style="font-weight: bold;color: #FF6347"> 70 offenders in Treatment and 48 offenders in Control</span>. Below are the average profile characteristics of each group.</span>
+            <img src="img/ran.jpg" align = "center">
+          </div>-->
+
+          <!--
+          <div class="col-md-7 col-md-push-0">
+            <div style="font-weight: bold; color: #00802b; font-size: 16px; text-align: center;">Preliminary Results (April 15-23)</div>
+            <center><img src="img/results.png" style= "max-height:60vh;"></center>
+            <br><br>
+            <div style="color: #666666; text-align: justify; margin-left: 40px; font-size: 18px; line-height:24px">
+            The difference in means is not statistically significant at this point and the effect size is small. However, the results tell a <span style="color: #00802b; font-weight: bold; font-size: 20px"> positive story</span> about the effects of our intervention. With more time and adequate sample size, the effects should be more pronounced.
+            </div>
+          </div>
+          -->
+      </div>
+    </div>
+    <div class="container about-container">
+      <p class="products-text"><br><br><br></p>
+      <h3 style="color: #666666; text-align: center; font-weight: bold;">BOT PIPELINE VIA APACHE STORM</h3>
+      <center><img src="img/storm-pipeline.png" style="width: 80%; max-height: 80%"></center>
+    </div>
+    <p class="products-text"><br><br><br></p>
+    <div class="container about-container">
+      <p class="products-text" style="font-size:20px">
+        The <span style="font-weight: bold; font-size: 24px; color: #00802b"><a href='https://chrome.google.com/webstore/detail/gender-harassment-tweets/elahhgfdmmiicibmckogidoijgngjjbi' target="_blank">Gender Harassment Tweets Blocker (Chrome Web Store)</a></span> is the second product. In contrast to the first product, women can download this Chrome extension to automatically block tweets that the product predicts to be gender harassment. Based on feedback, women have two customizable features to start. One can adjust a setting that automatically hides/removes tweets at their preferred level (e.g., tweets that have 60%+ chance of harassment, 80%+ chance of harassment, etc.). In addition, one can click a button to flag tweets as gender harassment that the browser extension didn't block (similar to clicking spam in email), or flag tweets as not gender harassment (similar to restoring email that went to spam incorrectly).
+        <br>
+        <br>
+        With positive user experience our top priority, a layer of web security was added before official release in December 2017. Our product had been first demonstrated at UC Berkeley and at Google in April and May 2017, respectively.
+      </p>
+      <p class="products-text" style="font-size:20px">
+      <!--<h3 style="color: #666666; text-align: center; font-weight: bold;">Chrome Web Store: Free Downloadable Product</h3>-->
+      <!--<center><a href="https://chrome.google.com/webstore/detail/gender-harassment-tweets/kclkekheidigikajgdijmmoiocfggnin" style="height:100px target=_blank"><img src="img/extension.png" style="width: 80%;max-height: 80%"></a></center>-->
+      <center><img src="img/Chrome_Extension_Image.png" style="width: 80%;max-height: 80%"></center>
+      <p class="products-text"><br><br></p>
+    </div>
+  </section>
+
+<!--==========================
+  Subscribe Section
+============================-->
+  <section id="subscribe">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-8">
+          <p class="subscribe-text">Please email us to join other subscribers, and inform and receive our latest product developments:
+            <br>
+            <br>
+            empathization.info@gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Porfolio Section
+============================-->
+  <section id="portfolio">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Artificial Intelligence</h3>
+          <div class="section-title-divider"></div>
+          <p class="portfolio-text">
+            <br>
+            <br>
+            We used active learning (machine learning) to collect enough tweets (dated 2017 and earlier) that humans such as Mechanical Turk women workers regard as gender harassment. That allowed our AI models to better learn and predict what humans regard as gender harassment language and symbols.
+            <br>
+            <br>
+            We found roughly 0.09% (9 out of 10,000) tweets are harassment. Rather than read through 10,000 tweets to find roughly 9 harassment ones, active learning (machine learning) helped us circumvent. We first labeled 1K tweets via various methods (i.e., Twitter live stream via API, Twitter keyword searches via API, harassment tweets via articles, etc.), then used our earliest baseline model (Logistic Regression) to output predicted probabilities on the tweets, before starting the cycle of active learning. Below are actual tweets we presented to an initial audience on 2/15/2017.
+            <br>
+            <br>
+            <b>[If you prefer not to read what many regard as highly offensive / misogynistic tweets, please bypass the table below, and jump to the next circular diagram.]</b>
+          </p>
+           <center><img src="img/method_pic0_active_learning.png" style="width: 65%; max-height: 65%"></center>
+
+          <p class="portfolio-text">
+            <br>
+            <br>
+            With active learning -- iteratively moving back and forth between data collection and machine learning -- we retrained our earliest baseline model, improving its ability to predict probability of harassment on past labeled tweets and new unlabeled tweets. For instance, our earliest model predicted the tweet, “you deserve vagina cancer”, at only 50.6% probability of harassment. As the model learned further, it eventually predicted that tweet with 70%+ probability of harassment. Our active learning process. . .
+          </p>
+          <center><img src="img/method_pic1_data_collection_transparent.png" style="width: 60%; max-height: 60%"></center>
+          <!--<h5>Source: <a href='https://en.wikipedia.org/wiki/Active_learning_(machine_learning) ' target="_blank">Active Learning (Machine Learning)</a></h5>-->
+
+          <p class="portfolio-text">
+            <br>
+            <br>
+            Our data collection process. . .
+          </p>
+          <center><img src="img/method_pic2_data_collection_transparent.png" style="width: 60%; max-height: 60%"></center>
+
+           <p class="portfolio-text">
+            <br>
+            <br>
+            We chose to leverage and tune three categories of models: Gradient Boosting Decision Trees (GBDTs), Feed Forward Neural Networks (FNNs), and Logistic Regression (LR). And we sought not the best single model but the best combination of models. Our artificial intelligence process. . .
+            <br>
+            <br>
+          </p>
+          <center><img src="img/method_pic3_ensemble_diagram_transparent.png" style="width: 60%; max-height: 60%"></center>
+
+          <p class="portfolio-text">
+            <br>
+            <br>
+            Rather than take a tweet's predicted probability of harassment from one model, we took a tweet's average predicted probability of harassment across multiple models for better reliability. Different models can make different mistakes in predicting the likelihood that tweets are offensive. For instance, for specific tweets, two models might predict low probability of gender harassment incorrectly, whereas six models might predict high probability of gender harassment correctly. By taking their average, the models can compensate for each other.
+            <br>
+            <br>
+            We used an automated approach that viewed the results of thousands of ensembles (where one ensemble refers to one combination of models). The graph below shows results for three separate combinations of models. The combination in the leftmost column is tied to our user-facing products: the Twitter Bot and Gender Harassment Tweets Blocker. Note, our flexibile approach allows replacement of one ensemble with another ensemble, if users and stakeholders prefer different performance. [Technical Language (Optional): As an interim step, we trained our final ensemble on the labeled train + validation data, then ran it on the labeled test data once (AUC: 91.3%, Precision: 78.9%, Recall: 32.5%). Then we proceeded to create a sampling distribution of results. Our final ensemble and specific alternative ensembles were eventually retrained on all labeled data (train + validation + test data), before linking our final ensemble to our user-facing products in the wild.]
+          </p>
+          <center><img src="img/method_pic3_models_reformatted.png" style="width: 80%;max-height: 80%"></center>
+
+          <p class="portfolio-text">
+            <br>
+            <br>
+            As we collect more labeled tweets via various channels, including via the Gender Harassment Tweets Blocker, our ensemble of models should improve even further.
+            <br>
+            <br>
+            [Technical Language (Optional): Our final models analyze words, not characters, despite our preference for some models in our ensemble to analyze characters. For instance, we initially analyzed characters as well, leveraging vectorizer "analyzer='char'" with random search across "ngram_range=(1,4)". Some of our initial GBDT models achieved about 95%+ precision and 80% recall. However, GDBT feature importances revealed some single characters such as " ' " took too much importance in the predicted probability of harassment, despite limited occurrences. So, we concluded a larger dataset than 18.8K tweets seems necessary to analyze characters in the future, and should not use that character-level method until then. Thus, to be fair and reasonable, we discarded ensembles which use that method and yield better results, and instead selected ensembles that both perform well and should generalize to new tweets in the Twitter universe. As revealed in the graph above, we built a sampling distribution to show not only our averages, but our standard errors around those averages. The small standard errors indicate each ensemble's consistent performance on 15 cross-validation samples of 6K+ tweets. 15 samples were derived from randomizing seed for 5 iterations and, within each iteration, implementing 3-fold cross-validation.]
+            </p>
+          <p class="portfolio-text">
+            Our combination of 8 models (5 GBDTs, 2 FNNs, and 1 LR) yielded gender harassment probabilities across a sample of 46.2 million tweets. . .
+          </p>
+          <center><img src="img/method_pic3_distribution.png" style="width: 80%;max-height: 80%"></center>
+
+          <p class="portfolio-text">
+            <br>
+            <br>
+            If users collectively tweet an average of 500 million times a day (<a href='http://www.dsayce.com/social-media/tweets-day/' style="color: white" target="_blank"><td>David Sayce, November 2016</td></a>; <a href='http://www.businessinsider.com/twitter-tweets-per-day-appears-to-have-stalled-2015-6' style="color: white" target="_blank"><td>Business Insider, June 2015</td></a>), our products (if scaled) could have not only detected but responded to around 1.18 million tweets per week. In full transparency, that also means our products could have incorrectly flagged about 331,000 tweets per week. However, the AI underlying our Twitter Bot and Gender Harassment Tweets Blocker can allow more correct predictions currently (if exchanged for lower detection rates of harassment tweets). For instance, users of the Gender Harassment Tweets Blocker can change the default of 0.70 (hiding tweets with a 70%+ chance of harassment) to 0.85 (hiding tweets with an 85%+ chance of harassment) to have less tweets incorrectly flagged as gender harassment.
+            <br>
+            <br>
+            Projected number of harassment tweets that our AI could have detected on Twitter's full dataset (3/6/2017 - 4/16/2017)
+            The horizontal green line refects the projected average of 168K harassment tweets a day across the 6-week timeframe
+          </p>
+        </div>
+
+        <script type="text/javascript">
+        var linechart = function(target) {
+          function make_y_axis() {
+              return d3.svg.axis()
+            .scale(y)
+            .orient("left")
+            //.ticks(10)
+          }
+
+          var formatPercent = d3.format(".0");
+
+          var margin = {top: 20, right: 160, bottom: 30, left: 60},
+              width = 1000 - margin.left - margin.right,
+              height = 600 - margin.top - margin.bottom;
+
+          var x = d3.time.scale()
+              .range([0, width]);
+
+          var y = d3.scale.linear()
+              .range([height, 0]);
+
+          var color = d3.scale.category10();
+
+          var xAxis = d3.svg.axis()
+              .scale(x)
+              .orient("bottom");
+
+          var yAxis = d3.svg.axis()
+              .scale(y)
+              .orient("left")
+              .tickFormat(formatPercent);
+
+          var line = d3.svg.line()
+              .interpolate("basis")
+              .x(function(d) { return x(d.date); })
+              .y(function(d) { return y(d.violence); });
+
+          var svg = d3.select(target).append("svg")
+              .attr("width", width + margin.left + margin.right)
+              .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+              .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+          var parseDate = d3.time.format("%Y/%m/%d").parse;
+          console.log(parseDate);
+
+          d3.csv("js/w210_presentation_harassment.csv", function(error, data) {
+
+            if (error) throw error;
+            console.log(data)
+
+            color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
+
+            data.forEach(function(d) {
+              d.date = parseDate(d.date);
+
+            });
+
+            var regions = color.domain().map(function(name) {
+              return {
+                name: name,
+                values: data.map(function(d) {
+            return {date: d.date, violence: +d[name]};
+                })
+              };
+            });
+
+            x.domain(d3.extent(data, function(d) { return d.date; }));
+
+            /*
+            y.domain([
+              d3.min(regions, function(c) { return 0 }),
+              d3.max(regions, function(c) { return 1 })
+            ]);
+            */
+            /* recast data of regions */
+            /*y.domain(d3.extent(regions, function(d) { return d.violence; }));*/
+            y.domain([ d3.min(regions, function(d) { return d3.min(d.values, function(e) { return e.violence; })}),
+                       d3.max(regions, function(d) { return d3.max(d.values, function(e) { return e.violence; })}) ]);
+
+            svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis);
+               //.append("text")
+                //.style("fill", "white");
+
+            svg.append("g")
+                .attr("class", "grid")
+                .call(make_y_axis()
+              .tickSize(-width, 0, 0)
+              .tickFormat("")
+                )
+
+            //.text(function(d) {
+            //    return "Value = " + formatPercent(d.value)
+            //}
+
+            svg.append("g")
+                .attr("class", "y axis")
+                .call(yAxis)
+              .append("text")
+                .attr("transform", "translate(0,-20)")
+                .attr("y", 6)
+                .attr("dy", "1em")
+                .style("text-anchor", "right")
+                //.style("fill", "white")
+                //.text("Projected number of harassment tweets that our AI could have detected on Twitter's full dataset (3/6/2017 - 4/16/2017)");
+
+            var region = svg.selectAll(".region")
+                .data(regions)
+              .enter().append("g")
+                .attr("class", "region");
+
+            region.append("path")
+                .attr("class", "line")
+                .attr("d", function(d) { return line(d.values); })
+                .style("stroke", rgb(48, 111, 90)) /*#14e09c*/
+                /*.style("stroke", function(d) { return color(d.name); })*/
+
+                // append a title element for a tooltip
+                // give hint to browser, whether tooltip should be for path, bar, or any element displayed
+                // browser takes care of interactivity, so developer loses flexibility
+                /*
+                .append("title")
+              .text(function(d) {
+              return "Value is " + y(d.values);
+            });
+                */
+
+            region.append("text")
+                .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+                .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.violence) + ")"; })
+                .attr("x", 3)
+                .attr("dy", ".35em")
+                .text(function(d) { return d.name; });
+          });
+        }
+        </script>
+
+        <div Id="chart"></div>
+        <script> linechart("#chart");
+        </script>
+      </div>
+
+    </div>
+  </section>
+
+<!--==========================
+  Testimonials Section
+============================-->
+  <section id="testimonials">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Future Possibilities</h3>
+          <div class="section-title-divider"></div>
+          <p class=".testimonials-text">
+            <font size="4">
+            Implement an existing list of user feedback for the Twitter Bot and Gender Harasment Tweets Blocker
+            <br>
+            <br>
+            Continue to learn from users on product concepts aimed to mitigate online gender harassment
+            <br>
+            <br>
+            Reach out to writers and organizations whose gender-harassment research and advocacy has inspired us to consider partnerships
+            <br>
+            <br>
+            Create a corresponding tweets blocker for phone and tablet given <a href='https://about.twitter.com/company' style="color: #008080" target="_blank">82% of Twitter active users are on mobile</a>
+            <br>
+            <br>
+            Continue field experiments for cause-effect conclusions on product impact
+            <br>
+            <br>
+            Collect more labeled tweets and/or try other AI methods to further detect and mitigate online gender harassement
+            </font>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Team Section
+============================-->
+  <section id="team">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Team</h3>
+          <div class="section-title-divider"></div>
+          <!--<p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>-->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-Derek S. Chan.jpg" height="220" alt=""></div>
+            <h4>Derek S. Chan</h4>
+            <span>Sr. Product Manager at Automation Anywhere; Artist in live theater</span>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/derekschan0" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-Shruti van Hemmen.jpg" height="220" alt=""></div>
+            <h4>Shruti van Hemmen</h4>
+            <span>Data Scientist at Intelisent</span>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/svanhemmen/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-Apekshit Sharma.png" height="220" alt=""></div>
+            <h4>Apekshit Sharma</h4>
+            <span>Software Engineer, Cloudera</span>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/apeksharma/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-women_interviewees.png" height="220" alt=""></div>
+            <h4>Women Who Granted Anonymized Interviews</h4>
+            <div class="social">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+   Advisors Section
+  ============================-->
+
+  <section id="team">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Advisors</h3>
+          <div class="section-title-divider"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-advisor-Joyce Shen.png" height="220" alt=""></div>
+            <h4>Joyce Shen</h4>
+            <span>Investment Director at Tenfore Holdings; Lecturer at UC Berkeley</span>
+            <!-- <span>Global Director, Emerging Technology Partnerships & Investments at Thomson Reuters; Lecturer at UC Berkeley</span> -->
+            <div class="social">
+              <a href="https://www.linkedin.com/in/joycejshen" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-advisor-Alberto Todeschini.png" height="220" alt=""></div>
+            <h4>Alberto Todeschini</h4>
+            <span>Lecturer at UC Berkeley</span>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/atodeschini" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/team-advisor-D. Alex Hughes.png" height="220" alt=""></div>
+            <h4>D. Alex Hughes</h4>
+            <span>Lecturer at UC Berkeley</span>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/d-alex-hughes-25a729139/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <!-- href="https://www.ischool.berkeley.edu/people/d-alex-hughes" target="_blank">UC Berkeley Profile</a> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Footer
+============================-->
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+              -->
+              Bootstrap Themes by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+  <!--<script src="contactform/contactform.js"></script> -->
+
+</body>
+</html>
