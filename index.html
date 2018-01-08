@@ -406,13 +406,13 @@ function carousel() {
             <p class="products-text" style="color: #666666; font-size: 16px">
               <span style="font-weight: bold; color: #00802b; font-size: 18px">Technical Language (Optional):</span>
               <br><br>
-              Percents: We measured not the number but percent of misogynistic tweets before vs. after our bots intervened. Why? A trend based off the number of misogynistic tweets can be misleading: A user can decrease from 15 misogynistic tweets last month to 10 this month, yet their percent of misogynistic tweets can increase from 15% (15/100) last month to 50% (10/20) this month.
+              Percents: We measured not the number but percent of misogynistic tweets before vs. after our bots intervened. Why? A trend based off the number of misogynistic tweets can be misleading. For instance, a user’s number can decrease from 15 misogynistic tweets last month to 13 this month, yet their percent of misogynistic tweets can increase from 15% (15 out of 100) last month to 50% (13 out of 26) this month.
               <br><br>
               Weights: We weighted each user by their number of overall tweets sent during the study. Why? Percent of misogynistic tweets would be inflated, for example, if a person with 5 overall tweets (1 misogynistic out of 5 overall tweets) were weighted the same as a person with 50 overall tweets (10 misogynistic  out of 50 overall tweets).</li>
               <br><br>
               Graphs: We show non-regression means and standard errors weighted by number of overall tweets. The vertical bars represent 95% confidence intervals. For each group’s weighted mean, the standard error was computed from a bootstrapped sampling distribution of 200 weighted means. And the “Post - Pre” value, [e.g., “-0.04 (0.02)”], is a weighted mean, followed by a standard error in parentheses. </li>
               <br><br>
-              Model: We used weighted least squares rather than difference-in-differences regression, as weighted least squares regression is a slightly more functional form. It allows the coefficient (pre-treatment percent of misogynistic tweets) to differ from 1.0. It also allows straightforward weighting (i.e., weighting each user by number of overall tweets for more reliability).
+              Model: We used weighted least squares rather than difference-in-differences regression to estimate the social experiment impact, as weighted least squares regression is a slightly more functional form. It allows the coefficient (pre-treatment percent of misogynistic tweets) to differ from 1.0. It also allows straightforward weighting (i.e., weighting each user by number of overall tweets for more reliability).
               <br><br>
               Equation: post-treatment percent of misogynistic tweets = intercept + pre-treatment percent of misogynistic tweets + treatment_bot1 + treatment_bot2 + treatment_bot3 + treatment_bot4</li>
               <br><br>
